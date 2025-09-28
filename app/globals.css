@@ -1,14 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @layer base {
   :root {
     --color-sand: #F5EBDC;
     --color-ocean: #0066CC;
     --color-coral: #FF6B35;
   }
-  body {
-    @apply bg-[var(--color-sand)] text-grey-900;
-  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: var(--color-sand);
 }
