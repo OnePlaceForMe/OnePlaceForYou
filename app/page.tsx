@@ -1,5 +1,6 @@
 'use client'
 import SearchBar from './SearchBar'
+import Map from './Map'
 
 export default function Home() {
   return (
@@ -21,9 +22,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-4" style={{ color: 'var(--color-ocean)' }}>
             Restaurants autour de vous
           </h2>
-          <div className="bg-white rounded-2xl shadow-lg p-4 h-96 flex items-center justify-center text-grey-400">
-            Carte Mapbox – à connecter plus tard
-          </div>
+          <Map />
         </div>
       </section>
     </main>
