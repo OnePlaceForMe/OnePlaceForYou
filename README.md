@@ -1,5 +1,5 @@
 # OnePlaceForYou
-Réservation de tables de restaurant en 3 clics – Next.js 14, Prisma, Stripe, Mapbox.
+Réservation de tables de restaurant – Next.js 14, Prisma, Stripe, Mapbox.
 
 ## Stack
 - Next.js 14 (App Router)
