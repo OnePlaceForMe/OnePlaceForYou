@@ -1,3 +1,4 @@
+console.log('🌱 START SEED')
 console.log('seed start')
 import { PrismaClient } from '@prisma/client';
 
