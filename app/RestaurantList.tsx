@@ -41,8 +41,9 @@ export default function RestaurantList() {
           <p className="text-grey-600 text-sm mb-2">{r.address}</p>
           <p className="text-grey-700 mb-4">{r.description}</p>
           <button
-            className="w-full text-white rounded-lg py-2"
+            className="w-full text-white rounded-lg py-2 hover:opacity-90 transition"
             style={{ backgroundColor: 'var(--color-coral)' }}
+            onClick={() => window.location.href = `/restaurants/${r.id}`}
           >
             Voir les disponibilités
           </button>
