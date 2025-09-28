@@ -13,10 +13,12 @@ type Restaurant = {
 }
 
 export default function RestaurantPage() {
-  const { id } = useParams()
+  const params = useParams()
+  const id = params?.id as string
   const [restaurant, setRestaurant] = useState<Restaurant | null>(null)
 
   useEffect(() => {
+    if (!id) return
     fetch(`/api/restaurants/${id}`)
       .then((res) => res.json())
       .then((data) => setRestaurant(data))
